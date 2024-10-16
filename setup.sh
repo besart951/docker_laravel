@@ -18,7 +18,7 @@ sed -i 's/DB_HOST=127.0.0.1/DB_HOST=postgres/g' src/.env
 sed -i 's/DB_PORT=3306/DB_PORT=5432/g' src/.env
 sed -i 's/DB_DATABASE=laravel/DB_DATABASE=laravel/g' src/.env
 sed -i 's/DB_USERNAME=root/DB_USERNAME=laravel/g' src/.env
-sed -i 's/DB_PASSWORD=/DB_PASSWORD=laravel/g' src/.env
+sed -i 's/DB_PASSWORD=/DB_PASSWORD=secred/g' src/.env
 
 # Generate Laravel application key
 docker-compose run --rm artisan key:generate
